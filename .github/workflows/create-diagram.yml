@@ -3,6 +3,7 @@ on:
   push:
       branches:
         - main
+        - automatic-code-visualizer
 jobs:
   get_data:
     runs-on: ubuntu-latest
