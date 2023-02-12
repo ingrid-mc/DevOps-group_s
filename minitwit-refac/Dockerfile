@@ -1,5 +1,5 @@
 # Use the Microsoft .NET SDK as the base image
-FROM mcr.microsoft.com/dotnet/sdk:5.0
+FROM mcr.microsoft.com/dotnet/sdk:7.0
 
 # Set the working directory
 WORKDIR /app
