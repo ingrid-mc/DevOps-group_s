@@ -5,41 +5,40 @@ build_property.UsingMicrosoftNETSdkWeb = true
 build_property.ProjectTypeGuids = 
 build_property.InvariantGlobalization = 
 build_property.PlatformNeutralAssembly = 
-build_property.EnforceExtendedAnalyzerRules = 
 build_property._SupportedPlatformList = Linux,macOS,Windows
 build_property.RootNamespace = minitwit_refac
 build_property.RootNamespace = minitwit_refac
-build_property.ProjectDir = /home/matejbasta/minitwit/minitwit-refac/
-build_property.RazorLangVersion = 7.0
+build_property.ProjectDir = c:\Users\EmilianoGiusto\Documents\Github\devops\DevOps-group_s\minitwit-refac\
+build_property.RazorLangVersion = 6.0
 build_property.SupportLocalizedComponentNames = 
 build_property.GenerateRazorMetadataSourceChecksumAttributes = 
-build_property.MSBuildProjectDirectory = /home/matejbasta/minitwit/minitwit-refac
+build_property.MSBuildProjectDirectory = c:\Users\EmilianoGiusto\Documents\Github\devops\DevOps-group_s\minitwit-refac
 build_property._RazorSourceGeneratorDebug = 
 
-[/home/matejbasta/minitwit/minitwit-refac/Pages/Error.cshtml]
-build_metadata.AdditionalFiles.TargetPath = UGFnZXMvRXJyb3IuY3NodG1s
+[c:/Users/EmilianoGiusto/Documents/Github/devops/DevOps-group_s/minitwit-refac/Pages/Error.cshtml]
+build_metadata.AdditionalFiles.TargetPath = UGFnZXNcRXJyb3IuY3NodG1s
 build_metadata.AdditionalFiles.CssScope = 
 
-[/home/matejbasta/minitwit/minitwit-refac/Pages/Index.cshtml]
-build_metadata.AdditionalFiles.TargetPath = UGFnZXMvSW5kZXguY3NodG1s
+[c:/Users/EmilianoGiusto/Documents/Github/devops/DevOps-group_s/minitwit-refac/Pages/Index.cshtml]
+build_metadata.AdditionalFiles.TargetPath = UGFnZXNcSW5kZXguY3NodG1s
 build_metadata.AdditionalFiles.CssScope = 
 
-[/home/matejbasta/minitwit/minitwit-refac/Pages/Shared/_ValidationScriptsPartial.cshtml]
-build_metadata.AdditionalFiles.TargetPath = UGFnZXMvU2hhcmVkL19WYWxpZGF0aW9uU2NyaXB0c1BhcnRpYWwuY3NodG1s
+[c:/Users/EmilianoGiusto/Documents/Github/devops/DevOps-group_s/minitwit-refac/Pages/Shared/_ValidationScriptsPartial.cshtml]
+build_metadata.AdditionalFiles.TargetPath = UGFnZXNcU2hhcmVkXF9WYWxpZGF0aW9uU2NyaXB0c1BhcnRpYWwuY3NodG1s
 build_metadata.AdditionalFiles.CssScope = 
 
-[/home/matejbasta/minitwit/minitwit-refac/Pages/Timeline.cshtml]
-build_metadata.AdditionalFiles.TargetPath = UGFnZXMvVGltZWxpbmUuY3NodG1s
+[c:/Users/EmilianoGiusto/Documents/Github/devops/DevOps-group_s/minitwit-refac/Pages/Timeline.cshtml]
+build_metadata.AdditionalFiles.TargetPath = UGFnZXNcVGltZWxpbmUuY3NodG1s
 build_metadata.AdditionalFiles.CssScope = 
 
-[/home/matejbasta/minitwit/minitwit-refac/Pages/_ViewImports.cshtml]
-build_metadata.AdditionalFiles.TargetPath = UGFnZXMvX1ZpZXdJbXBvcnRzLmNzaHRtbA==
+[c:/Users/EmilianoGiusto/Documents/Github/devops/DevOps-group_s/minitwit-refac/Pages/_ViewImports.cshtml]
+build_metadata.AdditionalFiles.TargetPath = UGFnZXNcX1ZpZXdJbXBvcnRzLmNzaHRtbA==
 build_metadata.AdditionalFiles.CssScope = 
 
-[/home/matejbasta/minitwit/minitwit-refac/Pages/_ViewStart.cshtml]
-build_metadata.AdditionalFiles.TargetPath = UGFnZXMvX1ZpZXdTdGFydC5jc2h0bWw=
+[c:/Users/EmilianoGiusto/Documents/Github/devops/DevOps-group_s/minitwit-refac/Pages/_ViewStart.cshtml]
+build_metadata.AdditionalFiles.TargetPath = UGFnZXNcX1ZpZXdTdGFydC5jc2h0bWw=
 build_metadata.AdditionalFiles.CssScope = 
 
-[/home/matejbasta/minitwit/minitwit-refac/Pages/Shared/_Layout.cshtml]
-build_metadata.AdditionalFiles.TargetPath = UGFnZXMvU2hhcmVkL19MYXlvdXQuY3NodG1s
-build_metadata.AdditionalFiles.CssScope = b-dgzj27xaj8
+[c:/Users/EmilianoGiusto/Documents/Github/devops/DevOps-group_s/minitwit-refac/Pages/Shared/_Layout.cshtml]
+build_metadata.AdditionalFiles.TargetPath = UGFnZXNcU2hhcmVkXF9MYXlvdXQuY3NodG1s
+build_metadata.AdditionalFiles.CssScope = b-kjbfoytvgd

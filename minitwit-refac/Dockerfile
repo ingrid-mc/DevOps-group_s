@@ -1,13 +1,23 @@
-FROM mcr.microsoft.com/dotnet/sdk:7.0-alpine
+# Use the Microsoft .NET SDK as the base image
+FROM mcr.microsoft.com/dotnet/sdk:5.0
+
+# Set the working directory
 WORKDIR /app
-COPY . .
+
+# Copy the application files to the image
+COPY . /app
+
+# Restore the application's dependencies
 RUN dotnet restore
+
+# Build the application
+RUN dotnet build -c Release
+
+# Publish the application
 RUN dotnet publish -c Release -o out
 
-FROM mcr.microsoft.com/dotnet/runtime:7.0-alpine
-WORKDIR /app
-COPY --from=mcr.microsoft.com/dotnet/sdk:7.0-alpine /app/out .
+# Set the working directory to the output directory
+WORKDIR /app/out
 
-EXPOSE 5256
-
-ENTRYPOINT ["dotnet", "minitwit-refac.dll"]
+# Specify the command to run the application
+CMD ["dotnet", "minitwit-refac.dll"]
