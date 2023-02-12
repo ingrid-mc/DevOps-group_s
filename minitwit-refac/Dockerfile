@@ -19,7 +19,7 @@ RUN dotnet publish -c Release -o out
 # Set the working directory to the output directory
 WORKDIR /app/out
 
-#Exposing port?
+#Exposing port??
 
 # Specify the command to run the application
 CMD ["dotnet", "minitwit-refac.dll"]
