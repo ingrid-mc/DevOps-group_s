@@ -8,19 +8,19 @@
     "net7.0": []
   },
   "packageFolders": {
-    "/Users/melissa/.nuget/packages/": {}
+    "/home/matejbasta/.nuget/packages/": {}
   },
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "/Users/melissa/Documents/MSc Computer Science/4th Semester/DevOps/DevOps-group_s/minitwit-refac/minitwit-refac.csproj",
+      "projectUniqueName": "/home/matejbasta/minitwit/minitwit-refac/minitwit-refac.csproj",
       "projectName": "minitwit-refac",
-      "projectPath": "/Users/melissa/Documents/MSc Computer Science/4th Semester/DevOps/DevOps-group_s/minitwit-refac/minitwit-refac.csproj",
-      "packagesPath": "/Users/melissa/.nuget/packages/",
-      "outputPath": "/Users/melissa/Documents/MSc Computer Science/4th Semester/DevOps/DevOps-group_s/minitwit-refac/obj/",
+      "projectPath": "/home/matejbasta/minitwit/minitwit-refac/minitwit-refac.csproj",
+      "packagesPath": "/home/matejbasta/.nuget/packages/",
+      "outputPath": "/home/matejbasta/minitwit/minitwit-refac/obj/",
       "projectStyle": "PackageReference",
       "configFilePaths": [
-        "/Users/melissa/.nuget/NuGet/NuGet.Config"
+        "/home/matejbasta/.nuget/NuGet/NuGet.Config"
       ],
       "originalTargetFrameworks": [
         "net7.0"
@@ -62,7 +62,7 @@
             "privateAssets": "all"
           }
         },
-        "runtimeIdentifierGraphPath": "/usr/local/share/dotnet/sdk/7.0.102/RuntimeIdentifierGraph.json"
+        "runtimeIdentifierGraphPath": "/usr/share/dotnet/sdk/7.0.102/RuntimeIdentifierGraph.json"
       }
     }
   }

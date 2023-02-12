@@ -29,3 +29,34 @@
 /Users/melissa/Documents/MSc Computer Science/4th Semester/DevOps/DevOps-group_s/minitwit-refac/obj/Debug/net7.0/minitwit-refac.pdb
 /Users/melissa/Documents/MSc Computer Science/4th Semester/DevOps/DevOps-group_s/minitwit-refac/obj/Debug/net7.0/minitwit-refac.genruntimeconfig.cache
 /Users/melissa/Documents/MSc Computer Science/4th Semester/DevOps/DevOps-group_s/minitwit-refac/obj/Debug/net7.0/ref/minitwit-refac.dll
+/home/matejbasta/minitwit/minitwit-refac/bin/Debug/net7.0/appsettings.Development.json
+/home/matejbasta/minitwit/minitwit-refac/bin/Debug/net7.0/appsettings.json
+/home/matejbasta/minitwit/minitwit-refac/bin/Debug/net7.0/minitwit-refac.staticwebassets.runtime.json
+/home/matejbasta/minitwit/minitwit-refac/bin/Debug/net7.0/minitwit-refac
+/home/matejbasta/minitwit/minitwit-refac/bin/Debug/net7.0/minitwit-refac.deps.json
+/home/matejbasta/minitwit/minitwit-refac/bin/Debug/net7.0/minitwit-refac.runtimeconfig.json
+/home/matejbasta/minitwit/minitwit-refac/bin/Debug/net7.0/minitwit-refac.dll
+/home/matejbasta/minitwit/minitwit-refac/bin/Debug/net7.0/minitwit-refac.pdb
+/home/matejbasta/minitwit/minitwit-refac/obj/Debug/net7.0/minitwit-refac.csproj.AssemblyReference.cache
+/home/matejbasta/minitwit/minitwit-refac/obj/Debug/net7.0/minitwit-refac.GeneratedMSBuildEditorConfig.editorconfig
+/home/matejbasta/minitwit/minitwit-refac/obj/Debug/net7.0/minitwit-refac.AssemblyInfoInputs.cache
+/home/matejbasta/minitwit/minitwit-refac/obj/Debug/net7.0/minitwit-refac.AssemblyInfo.cs
+/home/matejbasta/minitwit/minitwit-refac/obj/Debug/net7.0/minitwit-refac.csproj.CoreCompileInputs.cache
+/home/matejbasta/minitwit/minitwit-refac/obj/Debug/net7.0/minitwit-refac.MvcApplicationPartsAssemblyInfo.cache
+/home/matejbasta/minitwit/minitwit-refac/obj/Debug/net7.0/minitwit-refac.RazorAssemblyInfo.cache
+/home/matejbasta/minitwit/minitwit-refac/obj/Debug/net7.0/minitwit-refac.RazorAssemblyInfo.cs
+/home/matejbasta/minitwit/minitwit-refac/obj/Debug/net7.0/staticwebassets/msbuild.minitwit-refac.Microsoft.AspNetCore.StaticWebAssets.props
+/home/matejbasta/minitwit/minitwit-refac/obj/Debug/net7.0/staticwebassets/msbuild.build.minitwit-refac.props
+/home/matejbasta/minitwit/minitwit-refac/obj/Debug/net7.0/staticwebassets/msbuild.buildMultiTargeting.minitwit-refac.props
+/home/matejbasta/minitwit/minitwit-refac/obj/Debug/net7.0/staticwebassets/msbuild.buildTransitive.minitwit-refac.props
+/home/matejbasta/minitwit/minitwit-refac/obj/Debug/net7.0/staticwebassets.pack.json
+/home/matejbasta/minitwit/minitwit-refac/obj/Debug/net7.0/staticwebassets.build.json
+/home/matejbasta/minitwit/minitwit-refac/obj/Debug/net7.0/staticwebassets.development.json
+/home/matejbasta/minitwit/minitwit-refac/obj/Debug/net7.0/scopedcss/Pages/Shared/_Layout.cshtml.rz.scp.css
+/home/matejbasta/minitwit/minitwit-refac/obj/Debug/net7.0/scopedcss/bundle/minitwit-refac.styles.css
+/home/matejbasta/minitwit/minitwit-refac/obj/Debug/net7.0/scopedcss/projectbundle/minitwit-refac.bundle.scp.css
+/home/matejbasta/minitwit/minitwit-refac/obj/Debug/net7.0/minitwit-refac.dll
+/home/matejbasta/minitwit/minitwit-refac/obj/Debug/net7.0/refint/minitwit-refac.dll
+/home/matejbasta/minitwit/minitwit-refac/obj/Debug/net7.0/minitwit-refac.pdb
+/home/matejbasta/minitwit/minitwit-refac/obj/Debug/net7.0/minitwit-refac.genruntimeconfig.cache
+/home/matejbasta/minitwit/minitwit-refac/obj/Debug/net7.0/ref/minitwit-refac.dll
