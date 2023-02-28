@@ -9,7 +9,6 @@ const database = require('../db/dbService')
 const LatestService = require('../services/LatestService');
 const latestService = new LatestService();
 
-
 const getAllUsers = require('../model/user');
 const getFollowersFromUser = require('../model/followers');
 
@@ -285,7 +284,6 @@ router.post('/fllws/:username', async function (req, res, next) {
       latestService.updateLatest(parseInt(latest));
     }
 
-    //Validates existence of user
     const users = await getAllUsers();
     const userSelected = users.find(user => user.username === username);
     if (!userSelected) {
