@@ -22,7 +22,6 @@ router.get('/', function(req, res, next) {
                 and message.author_id = user.user_id \
                 order by message.pub_date desc limit 30"
     , [], (err, rows) => {
-      console.log(rows);
 
     if (err) {
       console.error(err);
@@ -38,10 +37,5 @@ router.get('/', function(req, res, next) {
     });
 });
 
-
-router.post('/register', function(req, res, next) {
-
-    res.render('test', { title: 'MiniTwit', messages: "test" });
-});
 
 module.exports = router;
