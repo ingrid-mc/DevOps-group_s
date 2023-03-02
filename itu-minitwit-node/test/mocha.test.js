@@ -14,18 +14,21 @@ describe('MiniTwit Tests', function() {
 
   beforeEach(function(done) {
     // Before each test, set up a blank database
-    const database = new Database("/Dbtest/minitwit.db");
+    db = new Database("test/Dbtest/minitwit.db");
     const schema = fs.readFileSync(path.join(__dirname, '../src/db/schema.sql'), 'utf-8');
-
-      console.log('Created database schema');
+    console.log('Created database schema');
+    db.run(schema, function(err) {
+      if (err) {
+        console.log(err);
+      }
     });
-
     done();
-  });
+    });
   
 
   afterEach(function(done) {
     db.close();
+    console.log("got here");
     done(); // close database connection
   });
 
@@ -114,5 +117,6 @@ describe('MiniTwit Tests', function() {
         assert.include(response.text, 'You were logged in');
       });
   });
+});
   
 
