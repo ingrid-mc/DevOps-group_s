@@ -1,12 +1,11 @@
 ---
-name: Minitwit CD
+name: Continuous Deployment
 
 on:
   push:
     # Run workflow every time something is pushed to the main branch
-    branches: [ main ]
-  pull_request:
-    branches: [ main ]
+    branches:
+      - github-actions-digital-ocean
   # allow manual triggers for now too
   workflow_dispatch:
     manual: true
@@ -46,22 +45,20 @@ jobs:
           cache-from: type=registry,ref=${{ secrets.DOCKER_USERNAME }}/minitwitimage:webbuildcache
           cache-to: type=registry,ref=${{ secrets.DOCKER_USERNAME }}/minitwitimage:webbuildcache,mode=max
 
-      - name: Copy files to server
-        uses: appleboy/scp-action@master
-        with:
-          host: ${{ secrets.SSH_HOST }}
-          username: ${{ secrets.SSH_USER }}
-          key: ${{ secrets.SSH_KEY }}
-          source: '.'
-          target: '/home/ubuntu/node-app'
+      - name: Configure SSH
+        run: |
+          mkdir -p ~/.ssh/
+          echo "$SSH_KEY" > ~/.ssh/minitwit.key
+          chmod 600 ~/.ssh/minitwit.key
+        env:
+          SSH_KEY: ${{ secrets.SSH_KEY }}
 
-      - name: Build and run container
-        uses: appleboy/ssh-action@master
-        with:
-          host: ${{ secrets.SSH_HOST }}
-          username: ${{ secrets.SSH_USER }}
-          key: ${{ secrets.SSH_KEY }}
-          script: |
-            cd /home/ubuntu/node-app
-            docker-compose down
-            docker-compose up -d
+      - name: Deploy to server
+        # Configure the ~./bash_profile and deploy.sh file on the Vagrantfile
+        run: >
+          ssh $SSH_USER@$SSH_HOST
+          -i ~/.ssh/minitwit.key -o StrictHostKeyChecking=no
+          '/minitwit/deploy.sh'
+        env:
+          SSH_USER: ${{ secrets.SSH_USER }}
+          SSH_HOST: ${{ secrets.SSH_HOST }}
