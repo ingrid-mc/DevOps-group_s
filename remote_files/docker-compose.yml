@@ -6,7 +6,7 @@ networks:
 services:
 
   minitwitimage:
-    image: ingridmariac/minitwitimage
+    image: ${DOCKER_USERNAME}/minitwitimage
     container_name: minitwit
     networks:
       - main
