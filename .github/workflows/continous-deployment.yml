@@ -5,8 +5,7 @@ on:
   push:
     # Run workflow every time something is pushed to the main branch
     branches:
-      - main
-      - master
+      - w6-new_droplet
   # allow manual triggers for now too
   workflow_dispatch:
     manual: true
@@ -40,7 +39,7 @@ jobs:
         uses: docker/build-push-action@v2
         with:
           context: .
-          file: ./Dockerfile-minitwit
+          file: ../itu-minitwit-node/Dockerfile-minitwit
           push: true
           tags: ${{ secrets.DOCKER_USERNAME }}/minitwitimage:latest
           cache-from: type=registry,ref=${{ secrets.DOCKER_USERNAME }}/minitwitimage:webbuildcache
