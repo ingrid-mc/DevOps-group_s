@@ -11,7 +11,7 @@ COPY package*.json /app
 RUN npm install
 
 # Copy the current directory contents into the container at /app
-COPY . /app
+COPY ./itu-minitwit-node /app
 
 # Set the environment variable PORT to 3000
 ENV PORT=5000
