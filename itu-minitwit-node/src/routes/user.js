@@ -3,6 +3,12 @@ var router = express.Router();
 
 const database = require('../db/dbService')
 
+const db = require("../routes")
+const User = db.users;
+const Op = db.Sequelize.Op;
+
+
+
 router.get('/:userId', async function(req, res, next) {
 
     // Display's a users tweets.

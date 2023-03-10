@@ -1,7 +1,7 @@
 var express = require('express');
 var router = express.Router();
 
-const database = require('../db/dbService')
+//const database = require('../db/dbService')
 
 const crypto = require('crypto');
 
@@ -9,6 +9,35 @@ const gravatar = function gravatarUrl(email, size = 80) {
   const hash = crypto.createHash('md5').update(email.trim().toLowerCase()).digest('hex');
   return `http://www.gravatar.com/avatar/${hash}?d=identicon&s=${size}`;
 }
+
+const databaseConfig = require("../db/database_config.js");
+const Sequelize = require("sequelize");
+const sequelizeInstance = new Sequelize(databaseConfig.DB, databaseConfig.USER, databaseConfig.PASSWORD, {
+  host: databaseConfig.HOST,
+  dialect: databaseConfig.dialect,
+  operatorsAliases: false,
+});
+
+const db = {};
+
+db.Sequelize = Sequelize;
+db.sequelize = sequelizeInstance;
+
+db.users = require("../db/models/user.js")(sequelizeInstance, Sequelize);
+db.followers = require("../db/models/follower.js")(sequelizeInstance, Sequelize);
+db.messages = require("../db/models/message.js")(sequelizeInstance, Sequelize);
+
+module.exports = db;
+
+async function test() {
+  try {
+    await db.sequelize.authenticate();
+    console.log('Connection has been established successfully.');
+  } catch (error) {
+    console.error('Unable to connect to the database:', error);
+  }
+}
+test()
 
 /**
  * GET /
