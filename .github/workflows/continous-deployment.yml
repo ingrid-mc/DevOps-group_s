@@ -1,12 +1,14 @@
 ---
-name: Minitwit CD
+name: Continuous Deployment
 
 on:
   push:
     # Run workflow every time something is pushed to the main branch
-    branches: [ main ]
+    branches:
+      - main
   pull_request:
-    branches: [ main ]
+    branches: 
+      - main 
   # allow manual triggers for now too
   workflow_dispatch:
     manual: true
@@ -40,7 +42,7 @@ jobs:
         uses: docker/build-push-action@v2
         with:
           context: .
-          file: ./itu-minitwit-node/Dockerfile-minitwit
+          file: ./itu-minitwit-node/Dockerfile
           push: true
           tags: ${{ secrets.DOCKER_USERNAME }}/minitwitimage:latest
           cache-from: type=registry,ref=${{ secrets.DOCKER_USERNAME }}/minitwitimage:webbuildcache
@@ -58,7 +60,7 @@ jobs:
         # Configure the ~./bash_profile and deploy.sh file on the Vagrantfile
         run: >
           ssh $SSH_USER@$SSH_HOST
-          -i ~/.ssh/minitwit.key -o StrictHostKeyChecking=no -o UserKnownHostsFile=/dev/null
+          -i ~/.ssh/minitwit.key -o StrictHostKeyChecking=no
           '/minitwit/deploy.sh'
         env:
           SSH_USER: ${{ secrets.SSH_USER }}
